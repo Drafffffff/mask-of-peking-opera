@@ -6,6 +6,7 @@
 
 <style lang="scss">
 #app {
+  overflow: hidden;
   height: 100vh;
 }
 </style>
