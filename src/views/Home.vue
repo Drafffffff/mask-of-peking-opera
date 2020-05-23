@@ -17,18 +17,21 @@
           <a
             href="#"
             class="lg:inline-flex lg:w-auto w-full px-6 py-2 rounded  items-center justify-center "
+            @click="$router.push('/')"
           >
             <span>主页</span>
           </a>
           <a
             href="#"
             class="lg:inline-flex lg:w-auto w-full px-6 py-2 rounded  items-center justify-center "
+            @click="$router.push('intro')"
           >
             <span>介绍</span>
           </a>
           <a
             href="#"
             class="lg:inline-flex lg:w-auto w-full px-6 py-2 rounded  items-center justify-center"
+            @click="$router.push('make')"
           >
             <span>制作</span>
           </a>
