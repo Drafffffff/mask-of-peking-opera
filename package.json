@@ -8,9 +8,13 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.1.2",
+    "@svgdotjs/svg.js": "^3.0.16",
     "core-js": "^3.6.4",
+    "ml5": "^0.5.0",
+    "swiper": "^5.4.1",
     "tailwindcss": "^1.2.0",
     "vue": "^2.6.11",
+    "vue-p5": "^0.8.3",
     "vue-router": "^3.1.6"
   },
   "devDependencies": {

@@ -48,6 +48,7 @@
         <div class=" items-end flex">
           <button
             class="makeButton py-3 px-10 float-right  text-white font-bold text-xl rounded-md items-end hover:shadow-lg transition-all duration-300 ease-in-out scale-105"
+            @click="handleMake(0)"
           >
             个人制作
           </button>
@@ -63,6 +64,7 @@
             <div class="flex-2">
               <button
                 class="roleButton py-3 px-10 text-white font-bold text-xl rounded-md items-end hover:shadow-lg transition-all duration-300 ease-in-out scale-105"
+                @click="handleMake(1)"
               >
                 进入制作
               </button>
@@ -76,6 +78,7 @@
             <div class="flex-2">
               <button
                 class="roleButton py-3 px-10 text-white font-bold text-xl rounded-md items-end hover:shadow-lg transition-all duration-300 ease-in-out scale-105"
+                @click="handleMake(2)"
               >
                 进入制作
               </button>
@@ -89,6 +92,7 @@
             <div class="flex-2">
               <button
                 class="roleButton py-3 px-10 text-white font-bold text-xl rounded-md items-end hover:shadow-lg transition-all duration-300 ease-in-out scale-105"
+                @click="handleMake(3)"
               >
                 进入制作
               </button>
@@ -102,6 +106,7 @@
             <div class="flex-2">
               <button
                 class="roleButton py-3 px-10 text-white font-bold text-xl rounded-md items-end hover:shadow-lg transition-all duration-300 ease-in-out scale-105"
+                @click="handleMake(4)"
               >
                 进入制作
               </button>
@@ -119,6 +124,16 @@
 export default {
   name: "Home",
   components: {},
+  methods: {
+    handleMake(role) {
+      this.$router.push({
+        path: "/make",
+        query: {
+          role: role,
+        },
+      });
+    },
+  },
 };
 </script>
 <style lang="scss">
@@ -184,7 +199,7 @@ export default {
           & .roleButton {
             opacity: 1;
           }
-          img{
+          img {
             padding: 1rem;
           }
         }

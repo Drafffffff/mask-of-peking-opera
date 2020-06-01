@@ -84,14 +84,14 @@
 <script>
 export default {
   methods: {
-    elementclean(){
-            document.getElementById("sheng-content").style.opacity = "0";
+    elementclean() {
+      document.getElementById("sheng-content").style.opacity = "0";
       document.getElementById("dan-content").style.opacity = "0";
       document.getElementById("jing-content").style.opacity = "0";
       document.getElementById("chou-content").style.opacity = "0";
     },
     shengShow() {
-      this.elementclean()
+      this.elementclean();
       this.$refs.dan.style.transform = "translateX(25vw)";
       this.$refs.jing.style.transform = "translateX(25vw)";
       this.$refs.chou.style.transform = "translateX(25vw)";
@@ -106,7 +106,7 @@ export default {
     },
     danShow() {
       // this.$refs.sheng.style.transform = "translateX(25vw)";
-      this.elementclean()
+      this.elementclean();
       this.$refs.jing.style.transform = "translateX(25vw)";
       this.$refs.chou.style.transform = "translateX(25vw)";
       document.getElementById("dan-content").style.opacity = "1";
@@ -120,7 +120,7 @@ export default {
       console.log("danleave");
     },
     jingShow() {
-      this.elementclean()
+      this.elementclean();
       this.$refs.jing.style.transform = "translateX(-25vw)";
       this.$refs.dan.style.transform = "translateX(-25vw)";
       document.getElementById("jing-content").style.opacity = "1";
@@ -131,7 +131,7 @@ export default {
       document.getElementById("jing-content").style.opacity = "0";
     },
     chouShow() {
-      this.elementclean()
+      this.elementclean();
       this.$refs.chou.style.transform = "translateX(-25vw)";
       this.$refs.dan.style.transform = "translateX(-25vw)";
       this.$refs.jing.style.transform = "translateX(-25vw)";

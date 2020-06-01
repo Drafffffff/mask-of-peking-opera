@@ -25,6 +25,18 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/Make.vue"),
   },
+  {
+    path: "/confirm",
+    name: "Confirm",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Confirm.vue"),
+  },
+  {
+    path: "/facedetection",
+    name: "facedetection",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/facedetection.vue"),
+  },
 ];
 
 const router = new VueRouter({
